@@ -1,0 +1,268 @@
+.kanban-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.display-controls {
+    margin: 20px;
+    position: relative;
+}
+
+.display-toggle {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.display-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.down-icon {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.3s ease;
+}
+
+.down-icon.rotated {
+    transform: rotate(180deg);
+}
+
+.display-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grouping-container,
+.ordering-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grouping-container label,
+.ordering-container label {
+    font-size: 16px;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.kanban-column {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 250px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.ticket-count {
+    color: #666;
+}
+
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ticket-priority {
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.priority-4 { background-color: #d9534f; color: white; }
+.priority-3 { background-color: #f0ad4e; color: white; }
+.priority-2 { background-color: #5bc0de; color: white; }
+.priority-1 { background-color: #5cb85c; color: white; }
+.priority-0 { background-color: #cccccc; color: white; }
+
+.kanban-column .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.column-header .icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.add-ticket-btn, .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add-ticket-btn img, .menu-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-group {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.user-container {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ticket-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticket-header .ticket-id {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ticket-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.priority-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.ticket-tag {
+    background-color: #f1f1f1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.ticket-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ticket-row {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ticket-id {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ticket-title {
+    font-size: 16px;
+}
+
+.backlog-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.ticket-backlog {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}

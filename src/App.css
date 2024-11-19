@@ -1,0 +1,7 @@
+.app-container {
+    flex-direction: column; /* Stack the title and Kanban board vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Make sure the container takes full viewport height */
+    text-align: center; /* Center the text (title) horizontally */
+}
